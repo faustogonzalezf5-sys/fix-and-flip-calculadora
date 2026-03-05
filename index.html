@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasador IA</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; padding: 24px; max-width: 720px; margin: 0 auto; }
+    label { font-weight: 600; display: block; margin-top: 12px; }
+    input, select { width: 100%; padding: 8px; margin-top: 6px; box-sizing: border-box; }
+    button { padding: 10px 16px; margin-top: 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1>Tasá tu propiedad en 2 minutos</h1>
+
+  <p>Recibí un informe automático con inteligencia artificial.</p>
+
+  <form action="#" method="post" id="tasacionForm">
+
+    <label for="direccion">Dirección:</label>
+    <input id="direccion" name="direccion" type="text" placeholder="Ej. Av. Siempreviva 123" required>
+
+    <label for="tipo">Tipo de propiedad:</label>
+    <select id="tipo" name="tipo">
+      <option value="departamento">Departamento</option>
+      <option value="casa">Casa</option>
+      <option value="ph">PH</option>
+      <option value="lote">Lote</option>
+    </select>
+
+    <label for="metros">Metros cubiertos:</label>
+    <input id="metros" name="metros" type="number" min="0" placeholder="m2" required>
+
+    <button type="submit">Obtener tasación</button>
+
+  </form>
+
+</body>
+</html>
